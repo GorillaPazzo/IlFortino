@@ -61,43 +61,176 @@ button {
 }
 
 .inner-border {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    position: relative;
+    
     border: 2px solid #DE9B72;
     height: calc(100% - 12px); /* Adjust height to account for border width */
-    width: calc(100% - 12px);/* Adjust to cover the entire viewport */
-    margin: 3px; 
-    box-sizing: border-box; 
+    width: calc(100% - 12px); /* Adjust width to account for border width */
+    margin: auto;
 }
-
+#news-list li {
+    font-size: 25px;
+    color: #e27633;
+}
 .corner-decoration {
     position: absolute;
     width: 3em;
     margin: -3px;
 }
+A/* styles_modified.css */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: rgb(110, 110, 91);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    margin: 30px auto;
+    border: 7px;
+}
+
+img {
+    width: 320px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: auto;
+}
+
+.roughtypewriter-font {
+    font-family: 'RoughTypewriter', sans-serif;
+}
+
+input, button {
+    border: 0;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: center;
+    color: aliceblue;
+    background-color: rgb(12, 13, 26);
+    margin-top: 10px;
+}
+
+button {
+    color: goldenrod;
+}
+
+.outer-border {
+    border: 2px solid #DE9B72;
+    min-height: 100vh; /* Adjust height to cover the entire viewport */
+    width: 100vw; /* Adjust width to cover the entire viewport */
+    margin: 0; /* Remove auto margin */
+    padding: 3px; /* Remove padding */
+    position: relative;
+}
+
+.mid-border {
+    border: 6px solid #DE9B72;
+    height: calc(100% - 12px); /* Adjust height to account for border width */
+    width: calc(100% - 12px); /* Adjust width to account for border width */
+    margin: auto;
+}
+
+.inner-border {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    border: 2px solid #DE9B72;
+    height: calc(100% - 6px); /* Adjust to account for margin and border */
+    width: calc(100% - 6px); /* Adjust to account for margin and border */
+    margin: 3px;
+    padding: 6px; /* Add padding */
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+#news-list li {
+    font-size: 15px;
+    color: #e27633;
+    margin-bottom: 10px; /* Add some bottom margin to separate each li element */
+}
+
 
 .corner-decoration.corner-left-top {
-    left: 0;
-    top: 0;
+    left: 15px;
+    top: 12px;
 }
 
 .corner-decoration.corner-right-top {
-    top: 0;
-    right: 0;
+    top: 12px;
+    right: 17px;
     transform: rotate(90deg);
 }
 
 .corner-decoration.corner-right-bottom {
-    right: 0;
-    bottom: 0;
+    right: 0px;
+    bottom: 15px; /* Adjust bottom position */
     transform: rotate(180deg);
 }
 
 .corner-decoration.corner-left-bottom {
+    left: 15px;
+    bottom: 15px; /* Adjust bottom position */
+    transform: rotate(-90deg);
+}
+
+.vertical-decoration {
+    position: absolute;
     left: 0;
-    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 11em;
+}
+.vertical-decoration.top{
+    top:0px
+}
+.vertical-decoration.bottom {
+    bottom: 8px;
+    transform: rotate(180deg);
+}
+
+.dark-background {
+    background: var(--dark-color);
+    display: flex;
+    margin: 0;
+    border: 0;
+}
+
+img{
+    max-width: 100%; 
+    height: auto;
+    border-radius: 8px
+}
+.corner-decoration.corner-left-top {
+    left: 0px;
+    top:0px;
+}
+
+.corner-decoration.corner-right-top {
+    top: 0px;
+    right: 0px;
+    transform: rotate(90deg);
+}
+
+.corner-decoration.corner-right-bottom {
+    right: 0px;
+    bottom: 0px;
+    transform: rotate(180deg);
+}
+
+.corner-decoration.corner-left-bottom {
+    
+    bottom: 0px;
+    left: 0px;
     transform: rotate(-90deg);
 }
 
@@ -109,13 +242,11 @@ button {
     width: 11em;
 }
 
-.vertical-decoration.top {
-    top: 0;
-}
 
 .vertical-decoration.bottom {
-    bottom: 0;
+    bottom: 0px;
     margin-top: 30px; /* Add some spacing */
+    transform: rotate(180deg)
 }
 
 .dark-background {
