@@ -1,6 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
+    height: 100%;
     background-color: rgb(110, 110, 91);
 }
 
@@ -45,17 +46,17 @@ button {
 
 .outer-border {
     border: 2px solid #DE9B72;
-    height: 99%;
-    width: 98%;
-    padding: 6px;
-    margin: 0 auto;
+    height: 100vh; /* Adjust height to cover the entire viewport */
+    width: 100vw; /* Adjust width to cover the entire viewport */
+    margin: 0; /* Remove auto margin */
+    padding: 3px; /* Remove padding */
+    position: relative;
 }
 
 .mid-border {
     border: 6px solid #DE9B72;
-    height: 100%;
-    width: 100%;
-    padding: 6px;
+    height: calc(100% - 12px); /* Adjust height to account for border width */
+    width: calc(100% - 12px); /* Adjust width to account for border width */
     margin: auto;
 }
 
@@ -65,9 +66,10 @@ button {
     flex-direction: column;
     position: relative;
     border: 2px solid #DE9B72;
-    height: 100%;
-    width: 100%;
-    margin: auto;
+    height: calc(100% - 12px); /* Adjust height to account for border width */
+    width: calc(100% - 12px);/* Adjust to cover the entire viewport */
+    margin: 3px; 
+    box-sizing: border-box; 
 }
 
 .corner-decoration {
@@ -119,4 +121,7 @@ button {
 .dark-background {
     background: var(--dark-color);
     display: flex;
+    margin: 0;
+    border: 0;
+
 }
