@@ -14,23 +14,23 @@ html, body {
 }
 #news-list li {
     font-size: 30px; 
-    color: #e6cf80;
+    color: #db9a59;
     margin-bottom: 10px; 
     -webkit-text-stroke: 1px #000000;
 }
 ul{
     list-style: none;
     padding:1;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
+      
 }
 
 ul li{
     background-color:#000000;
     padding:15px;
-    box-shadow: 0px 1px 4px #FFD700;
+    box-shadow: 0px 1px 1px #db9a59;
     border-radius: 10px;
-   
-    
+    flex-grow: 1;
 }
 
 img {
@@ -58,7 +58,7 @@ input, button {
 }
 
 button {
-    color: #ffd200;
+    color: #db9a59;
 }
 
 .outer-border {
