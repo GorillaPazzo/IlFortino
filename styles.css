@@ -12,85 +12,25 @@ html, body {
     margin: 30px auto;
     border: 7px;
 }
-
-img {
-    width: 320px;
-    margin: 0 auto;
-    border-radius: 8px;
-}
-
-h1 {
-    text-align: center;
-    font-size: 35px;
-    margin-bottom: auto;
-}
-
-.roughtypewriter-font {
-    font-family: 'RoughTypewriter', sans-serif;
-}
-
-input, button {
-    border: 0;
-    padding: 20px;
-    border-radius: 8px;
-    font-size: 20px;
-    text-align: center;
-    color: aliceblue;
-    background-color: rgb(12, 13, 26);
-    margin-top: 10px;
-}
-
-button {
-    color: goldenrod;
-}
-
-.outer-border {
-    border: 2px solid #DE9B72;
-    height: 100vh; /* Adjust height to cover the entire viewport */
-    width: 100vw; /* Adjust width to cover the entire viewport */
-    margin: 0; /* Remove auto margin */
-    padding: 3px; /* Remove padding */
-    position: relative;
-}
-
-.mid-border {
-    border: 6px solid #DE9B72;
-    height: calc(100% - 12px); /* Adjust height to account for border width */
-    width: calc(100% - 12px); /* Adjust width to account for border width */
-    margin: auto;
-}
-
-.inner-border {
-    
-    border: 2px solid #DE9B72;
-    height: calc(100% - 12px); /* Adjust height to account for border width */
-    width: calc(100% - 12px); /* Adjust width to account for border width */
-    margin: auto;
-}
 #news-list li {
-    font-size: 25px;
-    color: #e27633;
+    font-size: 30px; 
+    color: #e6cf80;
+    margin-bottom: 10px; 
+    -webkit-text-stroke: 1px #000000;
 }
-.corner-decoration {
-    position: absolute;
-    width: 3em;
-    margin: -3px;
-}
-A/* styles_modified.css */
-
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    background-color: rgb(110, 110, 91);
+ul{
+    list-style: none;
+    padding:1;
+    flex-wrap: wrap; 
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    max-width: 320px;
-    margin: 30px auto;
-    border: 7px;
+ul li{
+    background-color:#000000;
+    padding:15px;
+    box-shadow: 0px 1px 4px #FFD700;
+    border-radius: 10px;
+   
+    
 }
 
 img {
@@ -99,29 +39,26 @@ img {
     border-radius: 8px;
 }
 
-h1 {
-    text-align: center;
-    font-size: 35px;
-    margin-bottom: auto;
-}
-
-.roughtypewriter-font {
-    font-family: 'RoughTypewriter', sans-serif;
+.micro-5-regular {
+  font-family: "Micro 5", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 input, button {
     border: 0;
     padding: 20px;
     border-radius: 8px;
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
-    color: aliceblue;
+    color: #e6cf80;
     background-color: rgb(12, 13, 26);
     margin-top: 10px;
+    -webkit-text-stroke: 1px #000000;
 }
 
 button {
-    color: goldenrod;
+    color: #ffd200;
 }
 
 .outer-border {
@@ -153,100 +90,79 @@ button {
     box-sizing: border-box; /* Ensure padding is included in width */
 }
 
-#news-list li {
-    font-size: 15px;
-    color: #e27633;
-    margin-bottom: 10px; /* Add some bottom margin to separate each li element */
-}
 
 
-.corner-decoration.corner-left-top {
-    left: 15px;
-    top: 12px;
-}
-
-.corner-decoration.corner-right-top {
-    top: 12px;
-    right: 17px;
-    transform: rotate(90deg);
-}
-
-.corner-decoration.corner-right-bottom {
-    right: 0px;
-    bottom: 15px; /* Adjust bottom position */
-    transform: rotate(180deg);
-}
-
-.corner-decoration.corner-left-bottom {
-    left: 15px;
-    bottom: 15px; /* Adjust bottom position */
-    transform: rotate(-90deg);
-}
-
-.vertical-decoration {
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 11em;
-}
-.vertical-decoration.top{
-    top:0px
-}
-.vertical-decoration.bottom {
-    bottom: 8px;
-    transform: rotate(180deg);
-}
-
-.dark-background {
-    background: var(--dark-color);
-    display: flex;
-    margin: 0;
-    border: 0;
-}
-
-img{
-    max-width: 100%; 
-    height: auto;
-    border-radius: 8px
-}
-.corner-decoration.corner-left-top {
-    left: 0px;
-    top:0px;
-}
-
-.corner-decoration.corner-right-top {
-    top: 0px;
-    right: 0px;
-    transform: rotate(90deg);
-}
-
-.corner-decoration.corner-right-bottom {
-    right: 0px;
-    bottom: 0px;
-    transform: rotate(180deg);
-}
-
-.corner-decoration.corner-left-bottom {
+.corner-decoration {
+    position: fixed;
     
-    bottom: 0px;
-    left: 0px;
-    transform: rotate(-90deg);
 }
 
-.vertical-decoration {
+.fort-drawing {
+    mix-blend-mode: multiply;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 70px;
+    margin-bottom: auto;
+    color: #db9a59;
+    position: relative; 
+    -webkit-text-stroke: 1px #000000;
+}
+
+.vertical-decoration,
+.corner-decoration
+ {
     position: absolute;
     left: 0;
     right: 0;
     margin: auto;
-    width: 11em;
+    width: 15em;
+   
+    
+}
+.corner-decoration{
+     float: right;
+}
+.corner-decoration.corner-left-top {
+    width: 13%;
+    left: -87%;
+    top: 0px;
+    
 }
 
+.corner-decoration.corner-right-top {
+    width: 13%;
+    top: 0px;
+    right: -87%;
+    transform: rotate(90deg);
+}
+
+.corner-decoration.corner-right-bottom {
+    width: 13%;
+    right:-87%;
+    bottom: 0px;
+    transform: rotate(180deg);
+}
+
+.corner-decoration.corner-left-bottom {
+    width: 13%;
+    bottom: 0px;
+    left: -87%;
+    transform: rotate(-90deg);
+}
+
+.vertical-decoration.top {
+    top: 0;
+    width:45%;
+}
 
 .vertical-decoration.bottom {
     bottom: 0px;
     margin-top: 30px; /* Add some spacing */
-    transform: rotate(180deg)
+    transform: rotate(180deg);
+    width:200px;
 }
 
 .dark-background {
@@ -254,5 +170,5 @@ img{
     display: flex;
     margin: 0;
     border: 0;
-
+    flex-wrap: wrap;
 }
